@@ -1,0 +1,22 @@
+{
+	"name": "DS_ABLB_OutputDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adf_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "trialcontainer1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
