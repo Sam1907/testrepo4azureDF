@@ -5,12 +5,21 @@
 			"referenceName": "ls_adf_storage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"outParam": {
+				"type": "string",
+				"defaultValue": "output"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "output",
+				"folderPath": {
+					"value": "@dataset().outParam",
+					"type": "Expression"
+				},
 				"container": "trialcontainer1"
 			},
 			"columnDelimiter": ",",
