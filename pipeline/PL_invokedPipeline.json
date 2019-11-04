@@ -1,0 +1,12 @@
+{
+	"name": "PL_invokedPipeline",
+	"properties": {
+		"parameters": {
+			"sinkBlobContainer": {
+				"type": "string",
+				"defaultValue": "output"
+			}
+		},
+		"annotations": []
+	}
+}
