@@ -8,7 +8,7 @@
 		"parameters": {
 			"outParam": {
 				"type": "string",
-				"defaultValue": "output"
+				"defaultValue": "@pipeline.parameters.sinkBlobContainer"
 			}
 		},
 		"annotations": [],
