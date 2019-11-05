@@ -21,7 +21,7 @@
 					},
 					"waitOnCompletion": true,
 					"parameters": {
-						"sinkBlobContainer": "@activity(\"GetMetadata\").output.lastModified"
+						"sinkBlobContainer": "@activity(Get Metadata).output.lastModified"
 					}
 				}
 			},
